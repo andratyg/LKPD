@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // LKPD 4 NO 1//
+      //   let pabp = 70
+      //   let mtk = 82
+      //   let dpk = 77
+      //    const ratarata = ((pabp+mtk+dpk)/3)
+      //    if (ratarata >= 80 && ratarata <= 100) {
+      //     console.log("Grade A")
+      //   }
+      //    else if (ratarata >= 75 && ratarata <= 79) {
+      //    console.log("GRADE B")
+      //   }
+      //    else if (ratarata >= 65 && ratarata <= 74) {
+      //    console.log("GRADE C")
+      //   }
+      //   else if (ratarata >= 45 && ratarata <= 64 ) {
+      //      console.log("GRADE D")
+      //   }
+      //   else if (ratarata >= 0 && ratarata <= 44) {
+      //   console.log("GRADE E ")
+      //   }
+      //   else console.log("GRADE K")
+
+      // LKPD 4 NO 2//
+
+      let kode = 22505197803;
+      let g;
+      let dd;
+      let mm;
+      let yyyy;
+      let nn;
+      let Bulan;
+      g = Math.floor(kode / 10000000000);
+      dd = Math.floor((kode / 1000000000) % 100);
+      mm = Math.floor((kode / 1000000) % 100);
+      nn = Math.floor(kode % 100);
+      yyyy = Math.floor((kode / 100) % 10000);
+
+      switch (mm) {
+        case 1:
+          Bulan = "Januari";
+          break;
+        case 2:
+          Bulan = "Februari";
+          break;
+        case 3:
+          Bulan = "Maret";
+          break;
+        case 4:
+          Bulan = "April";
+          break;
+        case 5:
+          Bulan = "Mei";
+          break;
+        case 6:
+          Bulan = "Juni";
+          break;
+        case 7:
+          Bulan = "Juli";
+          break;
+        case 8:
+          Bulan = "Agustus";
+          break;
+        case 9:
+          Bulan = "September";
+          break;
+        case 10:
+          Bulan = "Oktober";
+          break;
+        case 11:
+          Bulan = "November";
+          break;
+        case 12:
+          Bulan = "Desember";
+          break;
+        default:
+          Bulan = "Bulan Tidak Valid";
+          break;
+      }
+      console.log("kode karyawan :", kode);
+      console.log("golongan adalah ", g);
+      console.log("tanggal : ", dd);
+      console.log("bulan", Bulan, mm);
+      console.log("tahun", yyyy);
+      console.log("no urutan karyawan", nn);
+      //lkpd 4 no 3//
+      // let jam = 1
+      // let menit = 59
+      // let detik = 59
+
+      // if (detik + 1 == 60) {
+      //     detik = 0;
+      //     menit++;
+      //     if (menit == 60) {
+      //         menit = 0;
+      //         jam++;
+      //         if (jam == 24) {
+      //             jam = 0;
+      //             menit = 0;
+      //             detik = 0;
+      //         }
+      //     }
+      // } else {
+      //     detik++;
+      // }
+      // console.log("jam",jam ,"menit",menit,"detik",detik)
+      //
+    </script>
+  </body>
+</html>
