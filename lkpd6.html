@@ -1,0 +1,73 @@
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <script>
+      // LKPD 6 no 1//
+      //      console.log(`==========top juara========= `)
+
+      //     for (let i = 1; i <= 5; i++) {
+
+      //       let nama = prompt("masukan nama siswa")
+      //          let nilaiMtk = Number(prompt("masukan nilai Mtk"))
+      //             let nilaiDpk = Number(prompt("masukan nilai DPK"))
+      //               let nilaiagama = Number(prompt("masukan nilai pabp"))
+      //                 let nilaiIng = Number(prompt("masukan nilai ing"))
+      //                    let nilaiIndo = Number(prompt("masukan nilai indo"))
+      //                    let kehadiran = Number(prompt("masukan kehadiran"))
+
+      // let jumlahkehadiran = 360 //tentukan kehadirannya dulu disini
+      // let totalNilai = (nilaiagama + nilaiMtk + nilaiDpk + nilaiIng + nilaiIndo)
+      //  if (totalNilai >= 475 && kehadiran == jumlahkehadiran ){
+
+      //      console.log(`${nama} dengan total nilai ${totalNilai} dan kehadiran ${kehadiran}`)
+      //  }}
+      //lkpd 6 no 2//
+      console.log(`==========laporan penjualan tiket========= `);
+
+      let eksekutif = 50;
+      let ekonomi = 50;
+      let vip = 50;
+      let diskonvip = 0;
+      let diskoneksekutif = 0;
+      let keuntunganeksekutif = 0;
+
+      for (let i = 1; i <= 1; i++) {
+        let vip = Number(prompt("masukan jumlah tiket vip yang kejual"));
+        let diskonvip = 0;
+        if (vip >= 35) {
+           diskonvip = vip * 0.25;
+        } else if (vip >= 20 && vip < 35) {
+          diskonvip = vip * 0.15;
+        } else {
+        diskonvip = vip * 0.05;
+        }
+         let diskoneksekutif = 0;
+        let eksekutif = Number(prompt("masukan jumlah tiket eksekutif yang kejual"));
+        if (eksekutif >= 40) {
+           diskoneksekutif = eksekutif * 0.2;
+        } else if (eksekutif >= 20 && eksekutif < 40) {
+          diskoneksekutif = eksekutif * 0.1;
+        } else {
+           diskoneksekutif = eksekutif * 0.02;
+        }
+
+        let ekonomi = Number(prompt("masukan jumlah tiket ekonomi yang kejual"));
+        let diskonekonomi = ekonomi * 0.07;
+
+        console.log("keutungan vip : " + diskonvip);
+
+        console.log("keutungan eksekutif : " + diskoneksekutif);
+
+        console.log("keutungan ekonomi : " + diskonekonomi);
+        let keuntungantotal = diskonvip + diskoneksekutif + diskonekonomi;
+        console.log("keutungan total : " + keuntungantotal);
+        console.log("tiket vip terjual : " + vip);
+        console.log("tiket eksekutif terjual : " + eksekutif);
+        console.log("tiket ekonomi terjual : " + ekonomi);
+        let totaltiketterjual = vip + eksekutif + ekonomi;
+        console.log("total tiket terjual : " + totaltiketterjual);}
+    </script>
+  </body>
+</html>
